@@ -5,22 +5,21 @@
 	id="WebApp_ID" version="2.5">
 	<display-name>egov.sample</display-name>
     
-	<!-- <context-param>
+	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath*:egovframework/spring/context-*.xml</param-value>
+		<param-value>classpath*:context/context-*.xml</param-value>
 	</context-param>
-    
+	
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-     -->
+	
 	<servlet>
 		<servlet-name>action</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>/WEB-INF/config/dispatcher-servlet.xml</param-value>
-		<!--<param-value>/WEB-INF/config/egovframework/springmvc/dispatcher-servlet.xml</param-value> -->
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
